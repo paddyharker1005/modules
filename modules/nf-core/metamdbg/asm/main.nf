@@ -48,7 +48,7 @@ process METAMDBG_ASM {
     def prefix = task.ext.prefix ?: "${meta.id}"
     """
     touch ${prefix}.metaMDBG.log
-    touch ${prefix}.contigs.fasta.gz
+    echo "" | gzip > ${prefix}.contigs.fasta.gz
 
     cat <<-END_VERSIONS > versions.yml
     "${task.process}":

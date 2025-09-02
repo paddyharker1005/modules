@@ -49,7 +49,7 @@ process VT_DECOMPOSEBLOCKSUB {
     }
 
     """
-    touch ${prefix}.vcf.gz
+    echo "" | gzip > ${prefix}.vcf.gz
 
     cat <<-END_VERSIONS > versions.yml
     "${task.process}":

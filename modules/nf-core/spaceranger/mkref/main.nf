@@ -52,7 +52,7 @@ process SPACERANGER_MKREF {
 
     touch ${reference_name}/genome.fa
     touch ${reference_name}/genome.fa.fai
-    touch ${reference_name}/genes.gtf.gz
+    echo "" | gzip > ${reference_name}/genes.gtf.gz
     touch ${reference_name}/reference.json
     touch ${reference_name}/Genome
     touch ${reference_name}/SA
